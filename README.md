@@ -17,5 +17,7 @@ python main.py
 ```
 ## Примечания
 Пример работы данного проекта на ОС Windows через cmd:
+
+![GIF 07 07 2024 2-23-57](https://github.com/Magomed993/Bank_security_point/assets/160238040/170ccd98-a65a-4603-9d18-a8b5e94a281e)
 ## Цель проекта
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
