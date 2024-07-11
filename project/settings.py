@@ -1,8 +1,11 @@
 import os
 from dotenv import load_dotenv
+from environs import Env
 
 
 load_dotenv()
+env = Env()
+
 engine = os.environ['ENGINE']
 host = os.environ['HOST']
 port = os.environ['PORT']
@@ -24,7 +27,7 @@ INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = 'REPLACE_ME'
 
-DEBUG = True
+DEBUG = env.bool('DEBUG', False)
 
 ROOT_URLCONF = 'project.urls'
 
