@@ -19,6 +19,8 @@ pip install -r requirements.txt
 - `PORT` - номер порта, который используется для подключения к базе данных;
 - `NAME` - имя базы данных, к которой осуществляется подключение.
 
+Или же подробное описание на сайте [Django](https://docs.djangoproject.com/en/3.2/intro/tutorial02/#database-setup)
+
 Включение/выключение режима отладочного кода (по умолчанию False):
 ```
 DEBUG=True

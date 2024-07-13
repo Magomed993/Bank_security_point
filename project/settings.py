@@ -1,28 +1,13 @@
 import os
-from dotenv import load_dotenv
 from environs import Env
 
 
-load_dotenv()
 env = Env()
+env.read_env()
 
-engine = os.environ['ENGINE']
-host = os.environ['HOST']
-port = os.environ['PORT']
-name = os.environ['NAME']
-user = os.environ['USER']
-password = os.environ['PASSWORD']
 DATABASES = {
-    'default': {
-        'ENGINE': engine,
-        'HOST': host,
-        'PORT': port,
-        'NAME': name,
-        'USER': user,
-        'PASSWORD': password,
-    }
+    'default': env.dj_db_url('DATABASE_URL')
 }
-
 INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = 'REPLACE_ME'
