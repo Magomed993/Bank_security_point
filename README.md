@@ -12,7 +12,10 @@ pip install -r requirements.txt
 ```
 Создайте файл ".env" в вашей деректории проекта откройте его в любом текстовом редакторе.
 ## Переменные окружения
-Замените DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME на свои данные БД.
+Замените в DATABASE_URL: USER, PASSWORD, HOST, PORT, NAME на свои данные БД.
+```
+DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/NAME
+```
 - `USER` - имя пользователя для подключения к базе данных;
 - `PASSWORD` - пароль пользователя для подключения к базе данных;
 - `HOST` - адрес хоста, на котором запущена база данных. Это может быть IP-адрес или доменное имя;
